@@ -3,169 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bridge11 | Voice of Parivartan & Talent Hub</title>
+    <title>Bridge11 | Uttarakhand's Pride</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
         body { font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
-        .indian-gradient { background: linear-gradient(135deg, #FF9933 0%, #FFFFFF 50%, #138808 100%); opacity: 0.1; position: absolute; top:0; left:0; width:100%; height:100%; z-index:-1; }
-        .hero-bg { background: linear-gradient(rgba(15, 23, 42, 0.9), rgba(30, 58, 138, 0.8)), url('https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?q=80&w=1200'); background-size: cover; background-position: center; }
+        
+        /* Uttarakhand Beauty Background */
+        .hero-bg { 
+            background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(30, 58, 138, 0.6)), 
+                        url('https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?q=80&w=1600&auto=format&fit=crop'); 
+            background-size: cover; 
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
         .card-hover:hover { transform: translateY(-10px); transition: 0.3s; border-bottom: 5px solid #FF9933; }
-        .icon-btn { transition: transform 0.2s; }
-        .icon-btn:hover { transform: scale(1.05); }
+        .glass-effect { background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-900">
 
-    <div class="indian-gradient"></div>
+    <div class="bg-orange-600 text-white py-2 px-6 flex justify-between items-center text-xs md:text-sm font-medium">
+        <div class="flex items-center gap-4">
+            <span id="liveClock"></span>
+            <span class="hidden md:inline">📍 Devidhura, Uttarakhand</span>
+        </div>
+        <div class="animate__animated animate__fadeInRight">Bridge11: Voice of Parivartan</div>
+    </div>
 
     <nav class="bg-white/90 backdrop-blur-md shadow-md sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <h1 class="text-3xl font-black text-blue-900 animate__animated animate__fadeInLeft">BRIDGE<span class="text-orange-600">11</span></h1>
-            <div class="hidden md:flex space-x-6 font-semibold text-gray-700">
+            <h1 class="text-3xl font-black text-blue-900">BRIDGE<span class="text-orange-600">11</span></h1>
+            <div class="hidden md:flex space-x-6 font-semibold text-gray-700 text-sm">
                 <a href="#vop" class="hover:text-orange-600 transition">Podcast</a>
                 <a href="#artists" class="hover:text-orange-600 transition">Artists</a>
                 <a href="#campaigns" class="hover:text-orange-600 transition">Campaigns</a>
                 <a href="#contact" class="hover:text-orange-600 transition">Contact</a>
             </div>
-            <a href="https://wa.me/91XXXXXXXXXX" class="bg-green-600 text-white px-5 py-2 rounded-full font-bold hover:bg-green-700 transition scale-95 hover:scale-105 flex items-center gap-2">
-                <i class='bx bxl-whatsapp text-xl'></i> WhatsApp Us
+            <a href="https://wa.me/91XXXXXXXXXX" class="bg-green-600 text-white px-5 py-2 rounded-full font-bold hover:bg-green-700 transition flex items-center gap-2 shadow-lg">
+                <i class='bx bxl-whatsapp text-xl'></i> WhatsApp
             </a>
         </div>
     </nav>
 
-    <header class="hero-bg text-white py-32 px-6 text-center relative overflow-hidden">
-        <div class="max-w-4xl mx-auto animate__animated animate__zoomIn">
-            <h2 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">Uttarakhand's Pride <br><span class="text-orange-400">Voice of Parivartan</span></h2>
-            <p class="text-xl mb-10 opacity-90">Connecting Content, Politics, and Art across Devbhoomi.</p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#artists" class="bg-orange-600 px-8 py-3 rounded-xl font-bold text-lg hover:shadow-orange-500/50 shadow-lg transition">Book Talent</a>
-                <a href="#vop" class="bg-white text-blue-900 px-8 py-3 rounded-xl font-bold text-lg hover:bg-gray-200 transition">Latest Podcasts</a>
+    <header class="hero-bg text-white py-32 md:py-48 px-6 text-center relative">
+        <div class="max-w-5xl mx-auto animate__animated animate__fadeIn">
+            <span class="bg-orange-600 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4 inline-block">Devbhoomi's Voice</span>
+            <h2 class="text-5xl md:text-8xl font-extrabold mb-4 leading-tight">Uttarakhand's Pride</h2>
+            <h3 class="text-2xl md:text-4xl font-bold text-orange-400 mb-6">Voice of Parivartan</h3>
+            <p class="text-lg md:text-2xl mb-8 opacity-90 italic">"Sanskriti, Samvaad aur Sashaktikaran ka Sangam"</p>
+            <div class="flex flex-col sm:row justify-center gap-4">
+                <a href="#artists" class="bg-orange-600 px-8 py-4 rounded-xl font-bold text-lg hover:bg-orange-700 transition shadow-2xl">Book Talent Now</a>
+                <a href="#vop" class="glass-effect px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/20 transition">Watch Latest Episodes</a>
             </div>
         </div>
     </header>
 
     <section id="vop" class="py-20 px-6 max-w-7xl mx-auto">
-        <h3 class="text-4xl font-bold text-center mb-12 border-b-4 border-orange-500 w-fit mx-auto pb-2">Latest Podcasts</h3>
+        <h3 class="text-4xl font-bold text-center mb-12 border-b-4 border-orange-500 w-fit mx-auto pb-2">Latest Conversations</h3>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover animate__animated animate__fadeInUp">
-                <iframe width="100%" height="200" src="https://www.youtube.com/embed/93kHPkI8VXY" frameborder="0" allowfullscreen></iframe>
-                <div class="p-4"><h4 class="font-bold">Jagatguru Rambhadracharya Ji Maharaj</h4></div>
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                <iframe width="100%" height="220" src="https://www.youtube.com/embed/93kHPkI8VXY" frameborder="0" allowfullscreen></iframe>
+                <div class="p-4"><h4 class="font-bold">Jagatguru Rambhadracharya Ji</h4></div>
             </div>
-            <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover animate__animated animate__fadeInUp animate__delay-1s">
-                <iframe width="100%" height="200" src="https://www.youtube.com/embed/WgrsffAzsTA" frameborder="0" allowfullscreen></iframe>
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                <iframe width="100%" height="220" src="https://www.youtube.com/embed/WgrsffAzsTA" frameborder="0" allowfullscreen></iframe>
                 <div class="p-4"><h4 class="font-bold">Kavi Kamal Aagney</h4></div>
             </div>
-            <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover animate__animated animate__fadeInUp animate__delay-2s">
-                <iframe width="100%" height="200" src="https://www.youtube.com/embed/ia7uUUOg0cY" frameborder="0" allowfullscreen></iframe>
-                <div class="p-4"><h4 class="font-bold">Indian Cricketer Ekta Bisht</h4></div>
-            </div>
             <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
-                <iframe width="100%" height="200" src="https://www.youtube.com/embed/dVmjQZu4QUo" frameborder="0" allowfullscreen></iframe>
-                <div class="p-4"><h4 class="font-bold">Harak Singh Rawat</h4></div>
-            </div>
-            <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
-                <iframe width="100%" height="200" src="https://www.youtube.com/embed/FKwjyb_yGdg" frameborder="0" allowfullscreen></iframe>
-                <div class="p-4"><h4 class="font-bold">Ex-CM Uttrakhand Harish Rawat</h4></div>
+                <iframe width="100%" height="220" src="https://www.youtube.com/embed/FKwjyb_yGdg" frameborder="0" allowfullscreen></iframe>
+                <div class="p-4"><h4 class="font-bold">Ex-CM Harish Rawat</h4></div>
             </div>
         </div>
     </section>
 
-    <section id="artists" class="bg-blue-900 py-20 px-6 text-white">
+    <section id="artists" class="bg-blue-950 py-20 px-6 text-white">
         <div class="max-w-7xl mx-auto">
-            <h3 class="text-4xl font-bold text-center mb-12 animate__animated animate__pulse animate__infinite">Book Renowned Stage Stars</h3>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white/10 p-6 rounded-2xl text-center border border-white/20 card-hover">
-                    <img src="https://img.youtube.com/vi/WgrsffAzsTA/hqdefault.jpg" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-2 border-orange-400">
-                    <h4 class="text-xl font-bold">Kamal Aagney & Friends</h4>
-                    <p class="text-sm opacity-80 mt-2 italic">Book curated talent like Kamal Aagney, Shambhu Shikhar, Priyanshu Gajendra and other renowned Stage Stars.</p>
-                    <a href="https://wa.me/91XXXXXXXXXX" class="mt-4 inline-block bg-orange-600 px-6 py-2 rounded-lg font-bold icon-btn">Book Now</a>
-                </div>
-                <div class="bg-white/10 p-6 rounded-2xl text-center border border-white/20 card-hover">
-                    <div class="text-4xl mb-4 text-orange-400">🎪</div>
-                    <h4 class="text-xl font-bold">Event Planning</h4>
-                    <p class="text-sm opacity-80 mt-2">Complete management for political, non-political, social and personal gatherings, fests, and cultural nights.</p>
-                </div>
-                <div class="bg-white/10 p-6 rounded-2xl text-center border border-white/20 card-hover">
-                    <div class="text-4xl mb-4 text-orange-400">🔬</div>
-                    <h4 class="text-xl font-bold">Expert Consulting</h4>
-                    <p class="text-sm opacity-80 mt-2">Connect with experts and scientists for consultancy across sectors.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="campaigns" class="py-20 px-6 max-w-7xl mx-auto">
-        <h3 class="text-4xl font-bold mb-12 border-l-8 border-orange-500 pl-4">Active Campaigns</h3>
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div class="bg-orange-100 p-8 rounded-2xl border-l-8 border-orange-500 shadow-sm card-hover">
-                <h4 class="font-bold text-xl text-orange-950">Political Campaigns</h4>
-                <p class="text-sm mt-2 text-orange-900">End-to-end strategic management for elections.</p>
-            </div>
-            <div class="bg-blue-100 p-8 rounded-2xl border-l-8 border-blue-500 shadow-sm card-hover">
-                <h4 class="font-bold text-xl text-blue-950">Non-Political</h4>
-                <p class="text-sm mt-2 text-blue-900">Social awareness and community drives.</p>
-            </div>
-            <div class="bg-red-100 p-8 rounded-2xl border-l-8 border-red-500 shadow-sm card-hover">
-                <h4 class="font-bold text-xl text-red-950">Nukkat Natak</h4>
-                <p class="text-sm mt-2 text-red-900">Spreading messages through traditional street plays.</p>
-            </div>
-            <div class="bg-green-100 p-8 rounded-2xl border-l-8 border-green-500 shadow-sm card-hover">
-                <h4 class="font-bold text-xl text-green-950">Cultural Programs</h4>
-                <p class="text-sm mt-2 text-green-900">Showcasing the rich heritage of Uttarakhand.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="bg-gray-100 py-20 px-6">
-        <div class="max-w-4xl mx-auto bg-white p-10 md:p-16 rounded-3xl shadow-2xl animate__animated animate__fadeInUp">
-            <h3 class="text-4xl font-bold text-center mb-8 text-blue-950">Connect With Us</h3>
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div class="space-y-6">
-                    <p class="font-bold text-xl text-blue-900">Contact Details:</p>
-                    <p class="flex items-center gap-3">
-                        <i class='bx bx-envelope text-blue-800 text-2xl'></i>
-                        <a href="mailto:sanatana602@gmail.com" class="text-blue-600 font-medium">sanatana602@gmail.com</a>
-                    </p>
-                    <p class="flex items-center gap-3">
-                        <i class='bx bx-map text-orange-600 text-2xl'></i>
-                        <span class="text-gray-700 font-medium">Based in Devidhura, Uttarakhand</span>
-                    </p>
-                    
-                    <p class="font-bold text-lg pt-4 text-blue-900">Follow Our Social Journey:</p>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <a href="https://www.instagram.com/voice_of_parivartan?igsh=MWM2bjdmdzU5djdhcQ==" target="_blank" 
-                           class="flex items-center gap-3 bg-pink-100 text-pink-700 px-4 py-3 rounded-xl font-bold icon-btn border border-pink-200">
-                            <i class='bx bxl-instagram text-2xl'></i> Follow on Instagram
-                        </a>
-                        <a href="https://www.facebook.com/share/1CBfwLp8eP/" target="_blank" 
-                           class="flex items-center gap-3 bg-blue-100 text-blue-800 px-4 py-3 rounded-xl font-bold icon-btn border border-blue-200">
-                            <i class='bx bxl-facebook text-2xl'></i> Connect on Facebook
-                        </a>
-                        <a href="https://www.youtube.com/@VoiceofParivartan" target="_blank" 
-                           class="flex items-center gap-3 bg-red-100 text-red-700 px-4 py-3 rounded-xl font-bold icon-btn border border-red-200 sm:col-span-2">
-                            <i class='bx bxl-youtube text-2xl'></i> Subscribe on YouTube
-                        </a>
+            <h3 class="text-4xl font-bold text-center mb-16">Exclusive Talent & Services</h3>
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="bg-white/10 p-8 rounded-3xl text-center border border-white/10 card-hover">
+                    <div class="flex justify-center -space-x-4 mb-6">
+                        <img src="https://imgs.etvbharat.com/etvbharat/prod-images/07-09-2024/1200-675-22396975-thumbnail-16x9-shambhu-shikhar-aspera.jpg" class="w-20 h-20 rounded-full border-4 border-orange-500 object-cover z-10">
+                        <img src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100004390990524" class="w-20 h-20 rounded-full border-4 border-blue-500 object-cover">
                     </div>
+                    <h4 class="text-2xl font-bold">Poets & Stars</h4>
+                    <p class="text-sm opacity-80 my-4 italic text-orange-200">Book Shambhu Shikhar, Kamal Aagney, Priyanshu Gajendra and other Stage Stars.</p>
+                    <a href="https://wa.me/91XXXXXXXXXX?text=Booking Inquiry for Artists" class="inline-block bg-orange-600 px-8 py-3 rounded-lg font-bold hover:bg-orange-700 transition">Book Artist</a>
                 </div>
-                <form class="space-y-4 bg-gray-50 p-6 rounded-2xl border">
-                    <input type="text" placeholder="Name" class="w-full p-3 border rounded-xl focus:ring-2 focus:ring-blue-300">
-                    <textarea placeholder="Message" class="w-full p-3 border rounded-xl focus:ring-2 focus:ring-blue-300" rows="3"></textarea>
-                    <button class="bg-blue-900 text-white w-full py-3 rounded-xl font-bold icon-btn hover:bg-blue-950 transition">Send Message</button>
-                </form>
+
+                <div class="bg-white/10 p-8 rounded-3xl text-center border border-white/10 card-hover">
+                    <div class="text-5xl mb-6 text-orange-400">🎪</div>
+                    <h4 class="text-2xl font-bold">Event Planning</h4>
+                    <p class="text-sm opacity-80 my-4">Complete management for political, social and personal fests and cultural nights.</p>
+                    <a href="https://wa.me/91XXXXXXXXXX?text=Booking Inquiry for Event Planning" class="inline-block bg-white text-blue-900 px-8 py-3 rounded-lg font-bold hover:bg-gray-200 transition">Book Now</a>
+                </div>
+
+                <div class="bg-white/10 p-8 rounded-3xl text-center border border-white/10 card-hover">
+                    <div class="text-5xl mb-6 text-orange-400">🔬</div>
+                    <h4 class="text-2xl font-bold">Expert Consulting</h4>
+                    <p class="text-sm opacity-80 my-4">Connect with renowned experts and scientists for consultancy across sectors.</p>
+                    <a href="https://wa.me/91XXXXXXXXXX?text=Booking Inquiry for Consultation" class="inline-block bg-white text-blue-900 px-8 py-3 rounded-lg font-bold hover:bg-gray-200 transition">Book Now</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-blue-950 text-white py-12 text-center relative">
-        <div class="max-w-7xl mx-auto px-6">
-            <h2 class="text-3xl font-bold mb-2 tracking-wide">BRIDGE11</h2>
-            <p class="opacity-70">Managed by Bridge11 Team | Devidhura, Uttarakhand</p>
-            <p class="text-xs mt-6 opacity-50 font-light italic text-orange-200">Bringing the essence of India to every screen.</p>
-        </div>
-    </footer>
-
-</body>
-</html>
+    <section id="contact" class="py-20 px-6 bg-gray-50">
+        <div class="max-w-5xl mx-auto bg-white p-10 md:p-16 rounded-[2rem] shadow-2xl grid md:grid-cols-2 gap-12">
+            <div>
+                <h3 class="text-4xl font-bold text-blue-950 mb-6">Connect With Bridge11</h3>
+                <p class="text-gray-600 mb-8">Ready to transform your vision into reality? Reach out to us via any platform below.</p>
+                <div class="space-y-4">
+                    <a href="https://www.instagram.com/voice_of_parivartan?igsh=MWM2bjdmdzU5djdhcQ==" target="_blank" class="flex items-center gap-4 bg-pink-50 text-pink-700 p-4 rounded-2xl hover:bg-pink-100 transition border border-pink-100 font-bold">
+                        <i class='bx bxl-instagram text-3xl'></i> Instagram
+                    </a>
+                    <a href="https://www.facebook.com/share/1CBfwLp8eP/" target="_blank" class="flex items-center gap-4 bg-blue-50 text-blue-800 p-4 rounded-2xl hover:bg-blue-100 transition border border-blue-100 font-bold">
+                        <i class='bx bxl-facebook text-3xl'></i> Facebook
+                    </a>
+                    <a href="https://www.youtube.com/@VoiceofParivartan" target="_blank" class="flex items-center gap-4 bg-red-50 text-red-700 p-4 rounded-2xl hover:bg-red-100 transition border border-red-100 font-bold">
+                        <i class='bx bxl-youtube text-3xl'></i> YouTube
+                    </a>
+                    <a href="mailto:sanatana602@gmail.com" class="flex items-center gap-4 bg-gray-50 text-gray-700 p-4 rounded-2xl hover
