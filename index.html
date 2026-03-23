@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bridge11 | Uttarakhand's Pride & Poet Hub</title>
+    <title>Bridge11 | Voice of Parivartan & Poet Hub</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -19,12 +19,9 @@
             background-attachment: fixed;
         }
 
-        .poet-grid-bg {
-            background: linear-gradient(to bottom, #f8fafc, #e2e8f0);
-            position: relative;
-        }
-
-        .poet-card {
+        .section-gradient { background: linear-gradient(to bottom, #f8fafc, #ffffff); }
+        
+        .card-style {
             background: white;
             border-radius: 1.5rem;
             overflow: hidden;
@@ -32,24 +29,13 @@
             border: 1px solid #e2e8f0;
         }
 
-        .poet-card:hover {
+        .card-style:hover {
             transform: translateY(-10px);
             box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-            border-bottom: 4px solid #FF9933;
         }
 
-        .poet-img {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-            border-bottom: 4px solid #1e3a8a;
-        }
-
-        .name-tag {
-            font-weight: 800;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-        }
+        .poet-img { width: 100%; height: 260px; object-fit: cover; border-bottom: 4px solid #1e3a8a; }
+        .name-tag { font-weight: 800; letter-spacing: 1px; text-transform: uppercase; }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-900">
@@ -66,7 +52,7 @@
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <h1 class="text-3xl font-black text-blue-900">BRIDGE<span class="text-orange-600">11</span></h1>
             <div class="hidden md:flex space-x-6 font-semibold text-gray-700 text-sm">
-                <a href="#vop" class="hover:text-orange-600 transition">Podcast</a>
+                <a href="#podcasts" class="hover:text-orange-600 transition">Podcasts</a>
                 <a href="#poet-list" class="hover:text-orange-600 transition">Book Poets</a>
                 <a href="#contact" class="hover:text-orange-600 transition">Contact</a>
             </div>
@@ -76,89 +62,133 @@
         </div>
     </nav>
 
-    <header class="hero-bg text-white py-32 md:py-40 px-6 text-center relative">
+    <header class="hero-bg text-white py-32 md:py-44 px-6 text-center relative">
         <div class="max-w-5xl mx-auto animate__animated animate__fadeIn">
             <h2 class="text-6xl md:text-8xl font-extrabold mb-4 leading-tight">Uttarakhand's Pride</h2>
-            <h3 class="text-2xl md:text-4xl font-bold text-orange-400 mb-6 uppercase">Voice of Parivartan</h3>
+            <h3 class="text-2xl md:text-4xl font-bold text-orange-400 mb-6 uppercase tracking-widest">Voice of Parivartan</h3>
             <p class="text-lg md:text-2xl mb-10 opacity-90 italic">"Sanskriti, Samvaad aur Sashaktikaran ka Sangam"</p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#poet-list" class="bg-orange-600 px-8 py-4 rounded-xl font-bold text-lg hover:bg-orange-700 transition shadow-2xl">Browse Poets</a>
-                <a href="#contact" class="bg-white text-blue-900 px-8 py-4 rounded-xl font-bold text-lg hover:bg-gray-100 transition shadow-2xl">Contact Us</a>
+                <a href="#podcasts" class="bg-orange-600 px-8 py-4 rounded-xl font-bold text-lg hover:bg-orange-700 transition shadow-2xl">Watch Podcasts</a>
+                <a href="#poet-list" class="bg-white text-blue-900 px-8 py-4 rounded-xl font-bold text-lg hover:bg-gray-100 transition shadow-2xl">Book Poets</a>
             </div>
         </div>
     </header>
 
-    <section id="poet-list" class="poet-grid-bg py-20 px-6">
+    <section id="podcasts" class="py-20 px-6 section-gradient">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16">
-                <h3 class="text-4xl md:text-5xl font-extrabold text-blue-950 mb-4 uppercase">Renowned Stage Stars</h3>
-                <div class="h-1.5 w-32 bg-orange-600 mx-auto rounded-full"></div>
-                <p class="mt-6 text-gray-600 max-w-2xl mx-auto">Book India's most celebrated poets and performers for your next cultural or social gathering.</p>
+                <h3 class="text-4xl md:text-5xl font-extrabold text-blue-950 mb-4 uppercase">Voice of Parivartan Podcasts</h3>
+                <div class="h-1.5 w-40 bg-orange-600 mx-auto rounded-full"></div>
+                <p class="mt-6 text-gray-600 max-w-2xl mx-auto">Devbhoomi ke kisanon, kalakaaron aur netaon ki awaaz. Watch our most impactful conversations.</p>
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
-                
-                <div class="poet-card animate__animated animate__fadeInUp">
-                    <img src="https://imgs.etvbharat.com/etvbharat/prod-images/07-09-2024/1200-675-22396975-thumbnail-16x9-shambhu-shikhar-aspera.jpg" class="poet-img" alt="SHAMBHU SHIKHAR">
-                    <div class="p-6 text-center">
-                        <h4 class="name-tag text-xl text-blue-900 mb-4">SHAMBHU SHIKHAR</h4>
-                        <a href="https://wa.me/918859964403?text=I%20want%20to%20book%20SHAMBHU%20SHIKHAR" class="block bg-orange-600 text-white py-2 rounded-lg font-bold hover:bg-orange-700 transition">BOOK NOW</a>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="card-style animate__animated animate__zoomIn">
+                    <iframe width="100%" height="220" src="https://www.youtube.com/embed/93kHPkI8VXY" frameborder="0" allowfullscreen></iframe>
+                    <div class="p-6">
+                        <h4 class="font-bold text-lg text-blue-900 mb-2 uppercase">Jagatguru Rambhadracharya Ji Maharaj</h4>
+                        <a href="https://youtu.be/93kHPkI8VXY" target="_blank" class="text-orange-600 font-bold hover:underline">Watch on YouTube →</a>
                     </div>
                 </div>
 
-                <div class="poet-card animate__animated animate__fadeInUp animate__delay-1s">
-                    <img src="https://yt3.googleusercontent.com/L3COgBE1cXIrqkv4Is0DfjEhiaAWtkR_L6F8_CI-hmhQsfRN3lfEKKBplycvwIjIk10Afz7Rcfg=s900-c-k-c0x00ffffff-no-rj" class="poet-img" alt="KAMAL AAGNEY">
-                    <div class="p-6 text-center">
-                        <h4 class="name-tag text-xl text-blue-900 mb-4">KAMAL AAGNEY</h4>
-                        <a href="https://wa.me/918859964403?text=I%20want%20to%20book%20KAMAL%20AAGNEY" class="block bg-orange-600 text-white py-2 rounded-lg font-bold hover:bg-orange-700 transition">BOOK NOW</a>
+                <div class="card-style animate__animated animate__zoomIn animate__delay-1s">
+                    <iframe width="100%" height="220" src="https://www.youtube.com/embed/WgrsffAzsTA" frameborder="0" allowfullscreen></iframe>
+                    <div class="p-6">
+                        <h4 class="font-bold text-lg text-blue-900 mb-2 uppercase">Kavi Kamal Aagney</h4>
+                        <a href="https://youtu.be/WgrsffAzsTA" target="_blank" class="text-orange-600 font-bold hover:underline">Watch on YouTube →</a>
                     </div>
                 </div>
 
-                <div class="poet-card animate__animated animate__fadeInUp animate__delay-2s">
-                    <img src="https://priyanshugajendra.com/wp-content/uploads/2024/11/hjhjhj.png" class="poet-img" alt="GAJENDRA PRIYANSHU">
-                    <div class="p-6 text-center">
-                        <h4 class="name-tag text-xl text-blue-900 mb-4">GAJENDRA PRIYANSHU</h4>
-                        <a href="https://wa.me/918859964403?text=I%20want%20to%20book%20GAJENDRA%20PRIYANSHU" class="block bg-orange-600 text-white py-2 rounded-lg font-bold hover:bg-orange-700 transition">BOOK NOW</a>
+                <div class="card-style animate__animated animate__zoomIn animate__delay-2s">
+                    <iframe width="100%" height="220" src="https://www.youtube.com/embed/ia7uUUOg0cY" frameborder="0" allowfullscreen></iframe>
+                    <div class="p-6">
+                        <h4 class="font-bold text-lg text-blue-900 mb-2 uppercase">Cricketer Ekta Bisht</h4>
+                        <a href="https://youtu.be/ia7uUUOg0cY" target="_blank" class="text-orange-600 font-bold hover:underline">Watch on YouTube →</a>
                     </div>
                 </div>
 
-                <div class="poet-card animate__animated animate__fadeInUp">
-                    <img src="http://kaviamitsharma.com/images/kaviAmit.png" class="poet-img" alt="AMIT SHARMA">
-                    <div class="p-6 text-center">
-                        <h4 class="name-tag text-xl text-blue-900 mb-4">AMIT SHARMA</h4>
-                        <a href="https://wa.me/918859964403?text=I%20want%20to%20book%20AMIT%20SHARMA" class="block bg-orange-600 text-white py-2 rounded-lg font-bold hover:bg-orange-700 transition">BOOK NOW</a>
+                <div class="card-style animate__animated animate__zoomIn">
+                    <iframe width="100%" height="220" src="https://www.youtube.com/embed/dVmjQZu4QUo" frameborder="0" allowfullscreen></iframe>
+                    <div class="p-6">
+                        <h4 class="font-bold text-lg text-blue-900 mb-2 uppercase">Harak Singh Rawat</h4>
+                        <a href="https://youtu.be/dVmjQZu4QUo" target="_blank" class="text-orange-600 font-bold hover:underline">Watch on YouTube →</a>
                     </div>
                 </div>
 
-                <div class="poet-card animate__animated animate__fadeInUp">
-                    <img src="https://i.ytimg.com/vi/CqUMcSbcIUs/hqdefault.jpg" class="poet-img" alt="SUDEEP BHOLA">
-                    <div class="p-6 text-center">
-                        <h4 class="name-tag text-xl text-blue-900 mb-4">SUDEEP BHOLA</h4>
-                        <a href="https://wa.me/918859964403?text=I%20want%20to%20book%20SUDEEP%20BHOLA" class="block bg-orange-600 text-white py-2 rounded-lg font-bold hover:bg-orange-700 transition">BOOK NOW</a>
+                <div class="card-style animate__animated animate__zoomIn animate__delay-1s">
+                    <iframe width="100%" height="220" src="https://www.youtube.com/embed/FKwjyb_yGdg" frameborder="0" allowfullscreen></iframe>
+                    <div class="p-6">
+                        <h4 class="font-bold text-lg text-blue-900 mb-2 uppercase">Ex-CM Harish Rawat</h4>
+                        <a href="https://youtu.be/FKwjyb_yGdg" target="_blank" class="text-orange-600 font-bold hover:underline">Watch on YouTube →</a>
                     </div>
                 </div>
-
-                <div class="poet-card animate__animated animate__fadeInUp">
-                    <img src="https://i.ytimg.com/vi/nmp8Zk5vkgs/maxresdefault.jpg" class="poet-img" alt="SHASHIKANT YADAV">
-                    <div class="p-6 text-center">
-                        <h4 class="name-tag text-xl text-blue-900 mb-4">SHASHIKANT YADAV</h4>
-                        <a href="https://wa.me/918859964403?text=I%20want%20to%20book%20SHASHIKANT%20YADAV" class="block bg-orange-600 text-white py-2 rounded-lg font-bold hover:bg-orange-700 transition">BOOK NOW</a>
-                    </div>
-                </div>
-
-                <div class="poet-card animate__animated animate__fadeInUp">
-                    <img src="https://i.ytimg.com/vi/VLXLtFTZ6M0/oar2.jpg" class="poet-img" alt="SHRADDHA SHAURYA">
-                    <div class="p-6 text-center">
-                        <h4 class="name-tag text-xl text-blue-900 mb-4">SHRADDHA SHAURYA</h4>
-                        <a href="https://wa.me/918859964403?text=I%20want%20to%20book%20SHRADDHA%20SHAURYA" class="block bg-orange-600 text-white py-2 rounded-lg font-bold hover:bg-orange-700 transition">BOOK NOW</a>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
 
-    <section id="contact" class="py-20 px-6 bg-white border-t">
+    <section id="poet-list" class="py-20 px-6 bg-white border-t">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h3 class="text-4xl md:text-5xl font-extrabold text-blue-950 mb-4 uppercase">Renowned Stage Stars</h3>
+                <div class="h-1.5 w-32 bg-blue-900 mx-auto rounded-full"></div>
+                <p class="mt-6 text-gray-600 max-w-2xl mx-auto italic">Book India's top poets for your programs through Bridge11.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+                <div class="card-style">
+                    <img src="https://imgs.etvbharat.com/etvbharat/prod-images/07-09-2024/1200-675-22396975-thumbnail-16x9-shambhu-shikhar-aspera.jpg" class="poet-img">
+                    <div class="p-6 text-center">
+                        <h4 class="name-tag text-lg text-blue-900 mb-4">SHAMBHU SHIKHAR</h4>
+                        <a href="https://wa.me/918859964403?text=I%20want%20to%20book%20SHAMBHU%20SHIKHAR" class="block bg-orange-600 text-white py-2 rounded-lg font-bold">BOOK NOW</a>
+                    </div>
+                </div>
+                <div class="card-style">
+                    <img src="https://yt3.googleusercontent.com/L3COgBE1cXIrqkv4Is0DfjEhiaAWtkR_L6F8_CI-hmhQsfRN3lfEKKBplycvwIjIk10Afz7Rcfg=s900-c-k-c0x00ffffff-no-rj" class="poet-img">
+                    <div class="p-6 text-center">
+                        <h4 class="name-tag text-lg text-blue-900 mb-4">KAMAL AAGNEY</h4>
+                        <a href="https://wa.me/918859964403?text=I%20want%20to%20book%20KAMAL%20AAGNEY" class="block bg-orange-600 text-white py-2 rounded-lg font-bold">BOOK NOW</a>
+                    </div>
+                </div>
+                <div class="card-style">
+                    <img src="https://priyanshugajendra.com/wp-content/uploads/2024/11/hjhjhj.png" class="poet-img">
+                    <div class="p-6 text-center">
+                        <h4 class="name-tag text-lg text-blue-900 mb-4">GAJENDRA PRIYANSHU</h4>
+                        <a href="https://wa.me/918859964403?text=I%20want%20to%20book%20GAJENDRA%20PRIYANSHU" class="block bg-orange-600 text-white py-2 rounded-lg font-bold">BOOK NOW</a>
+                    </div>
+                </div>
+                <div class="card-style">
+                    <img src="http://kaviamitsharma.com/images/kaviAmit.png" class="poet-img">
+                    <div class="p-6 text-center">
+                        <h4 class="name-tag text-lg text-blue-900 mb-4">AMIT SHARMA</h4>
+                        <a href="https://wa.me/918859964403?text=I%20want%20to%20book%20AMIT%20SHARMA" class="block bg-orange-600 text-white py-2 rounded-lg font-bold">BOOK NOW</a>
+                    </div>
+                </div>
+                <div class="card-style">
+                    <img src="https://i.ytimg.com/vi/CqUMcSbcIUs/hqdefault.jpg" class="poet-img">
+                    <div class="p-6 text-center">
+                        <h4 class="name-tag text-lg text-blue-900 mb-4">SUDEEP BHOLA</h4>
+                        <a href="https://wa.me/918859964403?text=I%20want%20to%20book%20SUDEEP%20BHOLA" class="block bg-orange-600 text-white py-2 rounded-lg font-bold">BOOK NOW</a>
+                    </div>
+                </div>
+                <div class="card-style">
+                    <img src="https://i.ytimg.com/vi/nmp8Zk5vkgs/maxresdefault.jpg" class="poet-img">
+                    <div class="p-6 text-center">
+                        <h4 class="name-tag text-lg text-blue-900 mb-4">SHASHIKANT YADAV</h4>
+                        <a href="https://wa.me/918859964403?text=I%20want%20to%20book%20SHASHIKANT%20YADAV" class="block bg-orange-600 text-white py-2 rounded-lg font-bold">BOOK NOW</a>
+                    </div>
+                </div>
+                <div class="card-style">
+                    <img src="https://i.ytimg.com/vi/VLXLtFTZ6M0/oar2.jpg" class="poet-img">
+                    <div class="p-6 text-center">
+                        <h4 class="name-tag text-lg text-blue-900 mb-4">SHRADDHA SHAURYA</h4>
+                        <a href="https://wa.me/918859964403?text=I%20want%20to%20book%20SHRADDHA%20SHAURYA" class="block bg-orange-600 text-white py-2 rounded-lg font-bold">BOOK NOW</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 px-6 bg-gray-50 border-t">
         <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12">
             <div>
                 <h3 class="text-4xl font-black text-blue-950 mb-6">Connect With Bridge11</h3>
@@ -175,19 +205,19 @@
                     </a>
                 </div>
             </div>
-            <div class="bg-gray-50 p-8 rounded-[2rem] border">
-                <h4 class="text-xl font-bold mb-4">Direct Message</h4>
+            <div class="bg-white p-8 rounded-[2rem] shadow-sm border">
+                <h4 class="text-xl font-bold mb-4 uppercase">Inquiry Form</h4>
                 <form class="space-y-4">
-                    <input type="text" placeholder="Name" class="w-full p-4 border rounded-2xl bg-white">
-                    <textarea placeholder="Your Requirement..." rows="4" class="w-full p-4 border rounded-2xl bg-white"></textarea>
-                    <button class="w-full bg-blue-900 text-white py-4 rounded-2xl font-bold hover:bg-black transition shadow-lg">Submit Inquiry</button>
+                    <input type="text" placeholder="Full Name" class="w-full p-4 border rounded-2xl bg-gray-50">
+                    <textarea placeholder="Tell us about your event or requirement..." rows="4" class="w-full p-4 border rounded-2xl bg-gray-50"></textarea>
+                    <button class="w-full bg-blue-900 text-white py-4 rounded-2xl font-bold hover:bg-black transition shadow-lg">Submit Request</button>
                 </form>
             </div>
         </div>
     </section>
 
     <footer class="bg-white py-12 text-center border-t">
-        <h2 class="text-3xl font-black text-blue-900">BRIDGE11</h2>
+        <h2 class="text-3xl font-black text-blue-900">BRIDGE<span class="text-orange-600">11</span></h2>
         <p class="text-gray-400 text-xs mt-6 uppercase tracking-widest">Sanskriti • Samvaad • Sashaktikaran</p>
     </footer>
 
