@@ -6,12 +6,15 @@
     <title>Bridge11 | Voice of Parivartan & Talent Hub</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
         body { font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
         .indian-gradient { background: linear-gradient(135deg, #FF9933 0%, #FFFFFF 50%, #138808 100%); opacity: 0.1; position: absolute; top:0; left:0; width:100%; height:100%; z-index:-1; }
         .hero-bg { background: linear-gradient(rgba(15, 23, 42, 0.9), rgba(30, 58, 138, 0.8)), url('https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?q=80&w=1200'); background-size: cover; background-position: center; }
         .card-hover:hover { transform: translateY(-10px); transition: 0.3s; border-bottom: 5px solid #FF9933; }
+        .icon-btn { transition: transform 0.2s; }
+        .icon-btn:hover { transform: scale(1.05); }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-900">
@@ -27,7 +30,9 @@
                 <a href="#campaigns" class="hover:text-orange-600 transition">Campaigns</a>
                 <a href="#contact" class="hover:text-orange-600 transition">Contact</a>
             </div>
-            <a href="https://wa.me/91XXXXXXXXXX" class="bg-green-600 text-white px-5 py-2 rounded-full font-bold hover:bg-green-700 transition scale-95 hover:scale-105">WhatsApp Us</a>
+            <a href="https://wa.me/91XXXXXXXXXX" class="bg-green-600 text-white px-5 py-2 rounded-full font-bold hover:bg-green-700 transition scale-95 hover:scale-105 flex items-center gap-2">
+                <i class='bx bxl-whatsapp text-xl'></i> WhatsApp Us
+            </a>
         </div>
     </nav>
 
@@ -45,17 +50,17 @@
     <section id="vop" class="py-20 px-6 max-w-7xl mx-auto">
         <h3 class="text-4xl font-bold text-center mb-12 border-b-4 border-orange-500 w-fit mx-auto pb-2">Latest Podcasts</h3>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover animate__animated animate__fadeInUp">
                 <iframe width="100%" height="200" src="https://www.youtube.com/embed/93kHPkI8VXY" frameborder="0" allowfullscreen></iframe>
-                <div class="p-4"><h4 class="font-bold">Jagatguru Rambhadracharya Ji</h4></div>
+                <div class="p-4"><h4 class="font-bold">Jagatguru Rambhadracharya Ji Maharaj</h4></div>
             </div>
-            <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover animate__animated animate__fadeInUp animate__delay-1s">
                 <iframe width="100%" height="200" src="https://www.youtube.com/embed/WgrsffAzsTA" frameborder="0" allowfullscreen></iframe>
                 <div class="p-4"><h4 class="font-bold">Kavi Kamal Aagney</h4></div>
             </div>
-            <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover animate__animated animate__fadeInUp animate__delay-2s">
                 <iframe width="100%" height="200" src="https://www.youtube.com/embed/ia7uUUOg0cY" frameborder="0" allowfullscreen></iframe>
-                <div class="p-4"><h4 class="font-bold">Cricketer Ekta Bisht</h4></div>
+                <div class="p-4"><h4 class="font-bold">Indian Cricketer Ekta Bisht</h4></div>
             </div>
             <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
                 <iframe width="100%" height="200" src="https://www.youtube.com/embed/dVmjQZu4QUo" frameborder="0" allowfullscreen></iframe>
@@ -63,28 +68,28 @@
             </div>
             <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
                 <iframe width="100%" height="200" src="https://www.youtube.com/embed/FKwjyb_yGdg" frameborder="0" allowfullscreen></iframe>
-                <div class="p-4"><h4 class="font-bold">Ex-CM Harish Rawat</h4></div>
+                <div class="p-4"><h4 class="font-bold">Ex-CM Uttrakhand Harish Rawat</h4></div>
             </div>
         </div>
     </section>
 
     <section id="artists" class="bg-blue-900 py-20 px-6 text-white">
         <div class="max-w-7xl mx-auto">
-            <h3 class="text-4xl font-bold text-center mb-12">Book Renowned Stage Stars</h3>
+            <h3 class="text-4xl font-bold text-center mb-12 animate__animated animate__pulse animate__infinite">Book Renowned Stage Stars</h3>
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white/10 p-6 rounded-2xl text-center border border-white/20">
+                <div class="bg-white/10 p-6 rounded-2xl text-center border border-white/20 card-hover">
                     <img src="https://img.youtube.com/vi/WgrsffAzsTA/hqdefault.jpg" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-2 border-orange-400">
-                    <h4 class="text-xl font-bold">Kamal Aagney</h4>
+                    <h4 class="text-xl font-bold">Kamal Aagney & Friends</h4>
                     <p class="text-sm opacity-80 mt-2 italic">Book curated talent like Kamal Aagney, Shambhu Shikhar, Priyanshu Gajendra and other renowned Stage Stars.</p>
-                    <a href="https://wa.me/91XXXXXXXXXX" class="mt-4 inline-block bg-orange-600 px-6 py-2 rounded-lg font-bold">Book Now</a>
+                    <a href="https://wa.me/91XXXXXXXXXX" class="mt-4 inline-block bg-orange-600 px-6 py-2 rounded-lg font-bold icon-btn">Book Now</a>
                 </div>
-                <div class="bg-white/10 p-6 rounded-2xl text-center border border-white/20">
-                    <div class="text-4xl mb-4">🎪</div>
+                <div class="bg-white/10 p-6 rounded-2xl text-center border border-white/20 card-hover">
+                    <div class="text-4xl mb-4 text-orange-400">🎪</div>
                     <h4 class="text-xl font-bold">Event Planning</h4>
                     <p class="text-sm opacity-80 mt-2">Complete management for political, non-political, social and personal gatherings, fests, and cultural nights.</p>
                 </div>
-                <div class="bg-white/10 p-6 rounded-2xl text-center border border-white/20">
-                    <div class="text-4xl mb-4">🔬</div>
+                <div class="bg-white/10 p-6 rounded-2xl text-center border border-white/20 card-hover">
+                    <div class="text-4xl mb-4 text-orange-400">🔬</div>
                     <h4 class="text-xl font-bold">Expert Consulting</h4>
                     <p class="text-sm opacity-80 mt-2">Connect with experts and scientists for consultancy across sectors.</p>
                 </div>
@@ -93,26 +98,74 @@
     </section>
 
     <section id="campaigns" class="py-20 px-6 max-w-7xl mx-auto">
-        <h3 class="text-4xl font-bold mb-12">Active Campaigns</h3>
+        <h3 class="text-4xl font-bold mb-12 border-l-8 border-orange-500 pl-4">Active Campaigns</h3>
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div class="bg-orange-100 p-8 rounded-2xl border-l-8 border-orange-500 shadow-sm">
-                <h4 class="font-bold text-xl">Political Campaigns</h4>
-                <p class="text-sm mt-2">End-to-end strategic management for elections.</p>
+            <div class="bg-orange-100 p-8 rounded-2xl border-l-8 border-orange-500 shadow-sm card-hover">
+                <h4 class="font-bold text-xl text-orange-950">Political Campaigns</h4>
+                <p class="text-sm mt-2 text-orange-900">End-to-end strategic management for elections.</p>
             </div>
-            <div class="bg-blue-100 p-8 rounded-2xl border-l-8 border-blue-500 shadow-sm">
-                <h4 class="font-bold text-xl">Non-Political</h4>
-                <p class="text-sm mt-2">Social awareness and community building drives.</p>
+            <div class="bg-blue-100 p-8 rounded-2xl border-l-8 border-blue-500 shadow-sm card-hover">
+                <h4 class="font-bold text-xl text-blue-950">Non-Political</h4>
+                <p class="text-sm mt-2 text-blue-900">Social awareness and community drives.</p>
             </div>
-            <div class="bg-red-100 p-8 rounded-2xl border-l-8 border-red-500 shadow-sm">
-                <h4 class="font-bold text-xl">Nukkat Natak</h4>
-                <p class="text-sm mt-2">Spreading messages through traditional street plays.</p>
+            <div class="bg-red-100 p-8 rounded-2xl border-l-8 border-red-500 shadow-sm card-hover">
+                <h4 class="font-bold text-xl text-red-950">Nukkat Natak</h4>
+                <p class="text-sm mt-2 text-red-900">Spreading messages through traditional street plays.</p>
             </div>
-            <div class="bg-green-100 p-8 rounded-2xl border-l-8 border-green-500 shadow-sm">
-                <h4 class="font-bold text-xl">Cultural Programs</h4>
-                <p class="text-sm mt-2">Showcasing the rich heritage of Uttarakhand.</p>
+            <div class="bg-green-100 p-8 rounded-2xl border-l-8 border-green-500 shadow-sm card-hover">
+                <h4 class="font-bold text-xl text-green-950">Cultural Programs</h4>
+                <p class="text-sm mt-2 text-green-900">Showcasing the rich heritage of Uttarakhand.</p>
             </div>
         </div>
     </section>
 
     <section id="contact" class="bg-gray-100 py-20 px-6">
-        <div class="max-w-4xl mx-auto
+        <div class="max-w-4xl mx-auto bg-white p-10 md:p-16 rounded-3xl shadow-2xl animate__animated animate__fadeInUp">
+            <h3 class="text-4xl font-bold text-center mb-8 text-blue-950">Connect With Us</h3>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <p class="font-bold text-xl text-blue-900">Contact Details:</p>
+                    <p class="flex items-center gap-3">
+                        <i class='bx bx-envelope text-blue-800 text-2xl'></i>
+                        <a href="mailto:sanatana602@gmail.com" class="text-blue-600 font-medium">sanatana602@gmail.com</a>
+                    </p>
+                    <p class="flex items-center gap-3">
+                        <i class='bx bx-map text-orange-600 text-2xl'></i>
+                        <span class="text-gray-700 font-medium">Based in Devidhura, Uttarakhand</span>
+                    </p>
+                    
+                    <p class="font-bold text-lg pt-4 text-blue-900">Follow Our Social Journey:</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <a href="https://www.instagram.com/voice_of_parivartan?igsh=MWM2bjdmdzU5djdhcQ==" target="_blank" 
+                           class="flex items-center gap-3 bg-pink-100 text-pink-700 px-4 py-3 rounded-xl font-bold icon-btn border border-pink-200">
+                            <i class='bx bxl-instagram text-2xl'></i> Follow on Instagram
+                        </a>
+                        <a href="https://www.facebook.com/share/1CBfwLp8eP/" target="_blank" 
+                           class="flex items-center gap-3 bg-blue-100 text-blue-800 px-4 py-3 rounded-xl font-bold icon-btn border border-blue-200">
+                            <i class='bx bxl-facebook text-2xl'></i> Connect on Facebook
+                        </a>
+                        <a href="https://www.youtube.com/@VoiceofParivartan" target="_blank" 
+                           class="flex items-center gap-3 bg-red-100 text-red-700 px-4 py-3 rounded-xl font-bold icon-btn border border-red-200 sm:col-span-2">
+                            <i class='bx bxl-youtube text-2xl'></i> Subscribe on YouTube
+                        </a>
+                    </div>
+                </div>
+                <form class="space-y-4 bg-gray-50 p-6 rounded-2xl border">
+                    <input type="text" placeholder="Name" class="w-full p-3 border rounded-xl focus:ring-2 focus:ring-blue-300">
+                    <textarea placeholder="Message" class="w-full p-3 border rounded-xl focus:ring-2 focus:ring-blue-300" rows="3"></textarea>
+                    <button class="bg-blue-900 text-white w-full py-3 rounded-xl font-bold icon-btn hover:bg-blue-950 transition">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-blue-950 text-white py-12 text-center relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-2 tracking-wide">BRIDGE11</h2>
+            <p class="opacity-70">Managed by Bridge11 Team | Devidhura, Uttarakhand</p>
+            <p class="text-xs mt-6 opacity-50 font-light italic text-orange-200">Bringing the essence of India to every screen.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
