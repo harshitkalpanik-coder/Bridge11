@@ -25,6 +25,8 @@
             overflow: hidden;
             transition: all 0.3s ease;
             border: 1px solid #e2e8f0;
+            display: flex;
+            flex-direction: column;
         }
 
         .card-style:hover {
@@ -42,13 +44,15 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            padding: 2rem;
+            padding: 2.5rem 1rem;
             text-align: center;
+            min-height: 280px;
         }
 
         .yt-channel-box:hover {
             background: #cc0000;
-            transform: scale(1.02);
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(255,0,0,0.3);
         }
 
         .poet-img { width: 100%; height: 260px; object-fit: cover; border-bottom: 4px solid #1e3a8a; }
@@ -84,7 +88,7 @@
             <span class="bg-orange-600 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4 inline-block">Devbhoomi's Voice</span>
             <h2 class="text-6xl md:text-8xl font-extrabold mb-4 leading-tight">Uttarakhand's Pride</h2>
             <h3 class="text-2xl md:text-4xl font-bold text-orange-400 mb-6 uppercase tracking-widest">Voice of Parivartan</h3>
-            <p class="text-lg md:text-3xl mb-10 opacity-95 italic hindi-text font-bold">"संस्कृति, संवाद और सशक्तिकरण का संगम..."</p>
+            <p class="text-lg md:text-3xl mb-10 opacity-95 italic hindi-text font-bold uppercase">"संस्कृति, संवाद और सशक्तिकरण का संगम..."</p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
                 <a href="#podcasts" class="bg-orange-600 px-8 py-4 rounded-xl font-bold text-lg hover:bg-orange-700 transition shadow-2xl">Watch Podcasts</a>
                 <a href="#poet-list" class="bg-white text-blue-900 px-8 py-4 rounded-xl font-bold text-lg hover:bg-gray-100 transition shadow-2xl">Book Poets</a>
@@ -104,53 +108,41 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                 
+                <div class="card-style">
+                    <iframe width="100%" height="220" src="https://www.youtube.com/embed/93kHPkI8VXY" frameborder="0" allowfullscreen></iframe>
+                    <div class="p-6 text-center"><h4 class="font-bold text-lg text-blue-900 uppercase">Jagatguru Rambhadracharya Ji</h4></div>
+                </div>
+
+                <div class="card-style">
+                    <iframe width="100%" height="220" src="https://www.youtube.com/embed/WgrsffAzsTA" frameborder="0" allowfullscreen></iframe>
+                    <div class="p-6 text-center"><h4 class="font-bold text-lg text-blue-900 uppercase">Kavi Kamal Aagney</h4></div>
+                </div>
+
+                <div class="card-style">
+                    <iframe width="100%" height="220" src="https://www.youtube.com/embed/K_v0y7ploT0" frameborder="0" allowfullscreen></iframe>
+                    <div class="p-6 text-center"><h4 class="font-bold text-lg text-blue-900 uppercase">BOBBY PAWAR (YOUTH LEADER)</h4></div>
+                </div>
+
+                <div class="card-style">
+                    <iframe width="100%" height="220" src="https://www.youtube.com/embed/ia7uUUOg0cY" frameborder="0" allowfullscreen></iframe>
+                    <div class="p-6 text-center"><h4 class="font-bold text-lg text-blue-900 uppercase">HARISH RAWAT (EX-CM UTTARAKHAND)</h4></div>
+                </div>
+
+                <div class="card-style">
+                    <iframe width="100%" height="220" src="https://www.youtube.com/embed/FKwjyb_yGdg" frameborder="0" allowfullscreen></iframe>
+                    <div class="p-6 text-center"><h4 class="font-bold text-lg text-blue-900 uppercase">EKTA BISHT (INDIAN CRICKETER)</h4></div>
+                </div>
+
+                <div class="card-style">
+                    <iframe width="100%" height="220" src="https://www.youtube.com/embed/dVmjQZu4QUo" frameborder="0" allowfullscreen></iframe>
+                    <div class="p-6 text-center"><h4 class="font-bold text-lg text-blue-900 uppercase">HARAK SINGH RAWAT</h4></div>
+                </div>
+
                 <a href="https://www.youtube.com/@VoiceofParivartan" target="_blank" class="yt-channel-box animate__animated animate__pulse animate__infinite">
                     <i class='bx bxl-youtube text-7xl mb-4'></i>
                     <h4 class="text-2xl font-black uppercase tracking-tighter">Watch Our Other Podcasts</h4>
                     <p class="text-sm mt-2 font-bold opacity-90">Visit Voice of Parivartan Official Channel</p>
                 </a>
-
-                <div class="card-style">
-                    <iframe width="100%" height="220" src="https://www.youtube.com/embed/93kHPkI8VXY" frameborder="0" allowfullscreen></iframe>
-                    <div class="p-6 text-center">
-                        <h4 class="font-bold text-lg text-blue-900 uppercase">Jagatguru Rambhadracharya Ji</h4>
-                    </div>
-                </div>
-
-                <div class="card-style">
-                    <iframe width="100%" height="220" src="https://www.youtube.com/embed/WgrsffAzsTA" frameborder="0" allowfullscreen></iframe>
-                    <div class="p-6 text-center">
-                        <h4 class="font-bold text-lg text-blue-900 uppercase">Kavi Kamal Aagney</h4>
-                    </div>
-                </div>
-
-                <div class="card-style">
-                    <iframe width="100%" height="220" src="https://www.youtube.com/embed/K_v0y7ploT0" frameborder="0" allowfullscreen></iframe>
-                    <div class="p-6 text-center">
-                        <h4 class="font-bold text-lg text-blue-900 uppercase">BOBBY PAWAR (YOUTH LEADER)</h4>
-                    </div>
-                </div>
-
-                <div class="card-style">
-                    <iframe width="100%" height="220" src="https://www.youtube.com/embed/ia7uUUOg0cY" frameborder="0" allowfullscreen></iframe>
-                    <div class="p-6 text-center">
-                        <h4 class="font-bold text-lg text-blue-900 uppercase">HARISH RAWAT (EX-CM UTTARAKHAND)</h4>
-                    </div>
-                </div>
-
-                <div class="card-style">
-                    <iframe width="100%" height="220" src="https://www.youtube.com/embed/FKwjyb_yGdg" frameborder="0" allowfullscreen></iframe>
-                    <div class="p-6 text-center">
-                        <h4 class="font-bold text-lg text-blue-900 uppercase">EKTA BISHT (INDIAN CRICKETER)</h4>
-                    </div>
-                </div>
-
-                <div class="card-style">
-                    <iframe width="100%" height="220" src="https://www.youtube.com/embed/dVmjQZu4QUo" frameborder="0" allowfullscreen></iframe>
-                    <div class="p-6 text-center">
-                        <h4 class="font-bold text-lg text-blue-900 uppercase">HARAK SINGH RAWAT</h4>
-                    </div>
-                </div>
 
             </div>
         </div>
